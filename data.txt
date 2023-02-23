@@ -1,0 +1,64 @@
+# Step 1
+```
+{tag: 'div'},
+```
+
+# Step 2
+```
+{tag: 'div', color: { r: 255, g: 255, b: 255 }, size: {x: 200, y: 100}},
+```
+
+# Step 3
+```
+[
+  {tag: 'div', color: { r: 255, g: 255, b: 255 }, size: {x: 200, y: 100}},
+  {tag: 'div', color: { r: 255, g: 255, b: 255 }, size: {x: 100, y: 100}},
+  {tag: 'div', color: { r: 255, g: 0, b: 0 }, size: {x: 50, y: 50}},
+  {tag: 'div', color: { r: 0, g: 255, b: 0 }, size: {x: 100, y: 200}}
+]
+```
+
+# Step 4
+```
+[
+  {tag: 'div', color: { r: 255, g: 255, b: 255 }, size: {x: 200, y: 100}, position: {x:100, y:100}},
+  {tag: 'div', color: { r: 255, g: 255, b: 255 }, size: {x: 100, y: 100}, position: {x:250, y:250}},
+  {tag: 'div', color: { r: 255, g: 0, b: 0 }, size: {x: 50, y: 50}, position: {x:400, y:400}},
+  {tag: 'div', color: { r: 0, g: 255, b: 0 }, size: {x: 100, y: 200}, position: {x:600, y:600}}
+]
+```
+
+
+# Step 5
+```
+[
+  {tag: 'div', children: []},
+  {tag: 'div', children: [
+      {tag: 'div', children:[{tag: 'span', children:[]}, {tag: 'span', children:[]}]}
+      {tag: 'div', children:[{tag: 'span', children:[]}, {tag: 'span', children:[]}]}
+    ]
+  },
+  {tag: 'div', children: [
+      {tag: 'div', children:[{tag: 'span', children:[]}, {tag: 'span', children:[]}]}
+      {tag: 'div', children:[{tag: 'span', children:[]}, {tag: 'span', children:[]}]}
+    ]
+  },
+]
+```
+
+# Step 6
+```
+[
+  {tag: 'div', children: []},
+  {tag: 'div', children: [
+      {tag: 'div', children:[{tag: 'span', children:'1.1'}, {tag: 'span', children:'1.2'}]}
+      {tag: 'div', children:[{tag: 'span', children:'2.1'}, {tag: 'span', children:'2.2'}]}
+    ]
+  },
+  {tag: 'div', children: [
+      {tag: 'div', children:[{tag: 'span', children:'3.1'}, {tag: 'span', children:'3.2'}]}
+      {tag: 'div', children:[{tag: 'span', children:'4.1'}, {tag: 'span', children:'4.2'}]}
+    ]
+  },
+]
+```
